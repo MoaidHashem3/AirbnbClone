@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/x-icon" href="Assets/Icons/logo.webp">
+    <link rel="stylesheet" href="styles/all.min.css"">
+    <title>Airbnb | Vacation rentals, cabins, beach houses, & more</title>
+</head>
+<body>
+    <nav>
+        <div id="logo">  <i class="fa-brands fa-airbnb" id="logo_icon"></i>
+            <h1 id="title">airbnb</h1>
+        </div>
+        <div id="nav_middle">
+        <span class="nav_item">Stays</span>
+        <span class="nav_item">Experiences</span>
+        </div>
+        <div id="nav_end">
+        <span class="nav_item">Airbnb your home</span>
+        <i class="fa-solid fa-globe" id="language_icon"></i>
+        <div id="user"  >
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-user"></i>
+        </div>
+        </div>
+    </nav>
+    <section id="search_bar">
+        <div class="search_child">
+        <label for="where_field" class="search_label">Where</label>
+        <input type="text", placeholder="Search directions" id="where_field" class="search_input">
+        </div>
+        <div class="search_child">
+        <label for="check_in" class="search_label" >Check in</label>
+        <input type="date" placeholder="Add dates"id="check_in" class="search_input">
+        </div>
+        <div class="search_child">
+        <label for="check_out" class="search_label">Check out</label>
+        <input type="date" placeholder="Add dates"id="check_out" class="search_input">
+        </div>
+        <div class="search_child" id="guests">
+        <label for="who_field" class="search_label">Who</label>
+        <input type="text", placeholder="Add guests" id="who_field" class="search_input">
+         </div>
+
+        <div id="search_icon">
+        <div ><i class="fa-solid fa-magnifying-glass search_icon"></i>
+        </div>
+    </section>
+    <section class="place_types">
+        <div class="type_item">
+            <i class="fa-solid fa-ticket"></i>
+            <span>Icons</span>
+        </div>
+        <div class="type_item">
+            <i class="fa-solid fa-bed"></i>
+            <span>Rooms</span>
+        </div> <div class="type_item">
+            <i class="fa-solid fa-mountain-city"></i>
+            <span>Amazing views</span>
+        </div> <div class="type_item">
+            <i class="fa-solid fa-tractor"></i>
+            <span>Countryside</span>
+        </div> <div class="type_item">
+            <i class="fa-solid fa-sailboat"></i>
+            <span>Boats</span>
+        </div> <div class="type_item">
+            <i class="fa-solid fa-umbrella-beach"></i>
+            <span>Beachfront</span>
+        </div> <div class="type_item">
+            <i class="fa-solid fa-water-ladder"></i>
+            <span>Amazing pools</span>
+        </div> <div class="type_item">
+            <i class="fa-solid fa-rocket"></i>
+            <span>OMG!</span>
+        </div> <div class="type_item">
+            <i class="fa-brands fa-fort-awesome"></i>
+            <span>Castles</span>
+        </div>
+    </div> <div class="type_item">
+        <i class="fa-solid fa-city"></i>
+        <span>Top cities</span>
+    </div>
+    <div id="filters"> 
+        <i class="fa-solid fa-sliders"></i>
+        <span>Filters</span>
+    </div>
+    <div id="display_price"> 
+        <span>Display total before taxes</span>
+        <i class="fa-solid fa-toggle-off"></i>
+        </div>
+    </section>
+    <hr>
+    <section class="cards_showcase">
+        <div class="card">
+            <img class="card_img" src="./Assets/images/1.webp">
+            <div class="card_ttile">
+                <h1 class="card_name">Qesm Saint Katrin, Egypt</h1>
+                <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <span>4.89</span>
+                </div>
+            </div>
+            <div class="card_disc">
+                <span calss="card_disc">Sea views</span> 
+                <span calss="card_disc">Jul 1-6</span> 
+                <span class="card_price">$112 night</span>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card_img" src="./Assets/images/2.webp">
+            <div class="card_ttile">
+                <h1 class="card_name">Al Haram, Egypt</h1>
+                <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <span>4.88</span>
+                </div>
+            </div>
+            <div class="card_disc">
+                <span calss="card_disc">17 Kilometers away</span> 
+                <span calss="card_disc">Jul 7-12</span> 
+                <span class="card_price">$55 night</span>
+            </div>
+        </div> <div class="card">
+            <img class="card_img" src="./Assets/images/3.webp">
+            <div class="card_ttile">
+                <h1 class="card_name">Dahab, Egypt</h1>
+                <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <span>5.0</span>
+                </div>
+            </div>
+            <div class="card_disc">
+                <span calss="card_disc">Sea views</span> 
+                <span calss="card_disc">Jul 15-20</span> 
+                <span class="card_price">$101 night</span>
+            </div>
+        </div> <div class="card">
+            <img class="card_img" src="./Assets/images/4.webp">
+            <div class="card_ttile">
+                <h1 class="card_name">New Cairo 1, Egypt</h1>
+                <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <span>5.0</span>
+                </div>
+            </div>
+            <div class="card_disc">
+                <span calss="card_disc">28 Kilometers away</span> 
+                <span calss="card_disc">Jul 1-6</span> 
+                <span class="card_price">$309 night</span>
+            </div>
+        </div> <div class="card">
+            <img class="card_img" src="./Assets/images/5.webp">
+            <div class="card_ttile">
+                <h1 class="card_name">El Gouna, Egypt</h1>
+                <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <span>4.89</span>
+                </div>
+            </div>
+            <div class="card_disc">
+                <span calss="card_disc">Sea views</span> 
+                <span calss="card_disc">Aug 28-Sep 6</span> 
+                <span class="card_price">$343 night</span>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card_img" src="./Assets/images/6.webp">
+            <div class="card_ttile">
+                <h1 class="card_name">Vis, Croatia</h1>
+                <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <span>4.99</span>
+                </div>
+            </div>
+            <div class="card_disc">
+                <span calss="card_disc">4.4 hetarces</span> 
+                <span calss="card_disc">Jul 2-7</span> 
+                <span class="card_price">$930 night</span>
+            </div>
+        </div><div class="card">
+            <img class="card_img" src="./Assets/images/7.webp">
+            <div class="card_ttile">
+                <h1 class="card_name">Värmdö, Sweden</h1>
+                <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <span>5.0</span>
+                </div>
+            </div>
+            <div class="card_disc">
+                <span calss="card_disc">8 hetarces</span> 
+                <span calss="card_disc">Aug 21-26</span> 
+                <span class="card_price">$333 night</span>
+            </div>
+        </div><div class="card">
+            <img class="card_img" src="./Assets/images/8.webp">
+            <div class="card_ttile">
+                <h1 class="card_name">Murter, Croatia</h1>
+                <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <span>5.0</span>
+                </div>
+            </div>
+            <div class="card_disc">
+                <span calss="card_disc">1 hetarces</span> 
+                <span calss="card_disc">Jul 13-20</span> 
+                <span class="card_price">$445 night</span>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card_img" src="./Assets/images/9.webp">
+            <div class="card_ttile">
+                <h1 class="card_name">Giza Governorate, Egypt</h1>
+                <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <span>4.9</span>
+                </div>
+            </div>
+            <div class="card_disc">
+                <span calss="card_disc">Near NEWGIZA Golf Club</span> 
+                <span calss="card_disc">Jul 10-15</span> 
+                <span class="card_price">$120 night</span>
+            </div>
+        </div><div class="card">
+            <img class="card_img" src="./Assets/images/10.webp">
+            <div class="card_ttile">
+                <h1 class="card_name">First 6th of October, Egypt</h1>
+                <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <span>5.0</span>
+                </div>
+            </div>
+            <div class="card_disc">
+                <span calss="card_disc">Near NEWGIZA Golf Club</span> 
+                <span calss="card_disc">Jul 1-6</span> 
+                <span class="card_price">$228 night</span>
+            </div>
+        </div><div class="card">
+            <img class="card_img" src="./Assets/images/11.webp">
+            <div class="card_ttile">
+                <h1 class="card_name">First 6th of October, Egypt</h1>
+                <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <span>4.9</span>
+                </div>
+            </div>
+            <div class="card_disc">
+                <span calss="card_disc">Near NEWGIZA Golf Club</span> 
+                <span calss="card_disc">Jul 1-6</span> 
+                <span class="card_price">$458 night</span>
+            </div>
+        </div><div class="card">
+            <img class="card_img" src="./Assets/images/12.webp">
+            <div class="card_ttile">
+                <h1 class="card_name">Ponta Delgada, Portugal</h1>
+                <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <span>4.93</span>
+                </div>
+            </div>
+            <div class="card_disc">
+                <span calss="card_disc">5,253 Kilometers away</span> 
+                <span calss="card_disc">Jul 12-17</span> 
+                <span class="card_price">$150 night</span>
+            </div>
+        </div><div class="card">
+            <img class="card_img" src="./Assets/images/13.webp">
+            <div class="card_ttile">
+                <h1 class="card_name">Langkawi, Malaysia</h1>
+                <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <span>4.94</span>
+                </div>
+            </div>
+            <div class="card_disc">
+                <span calss="card_disc">7,593 Kilometers away</span> 
+                <span calss="card_disc">Jul 23-28</span> 
+                <span class="card_price">$128 night</span>
+            </div>
+        </div>
+        </div>
+    </section>
+    <h1 id="section_tittle">Past experiences</h1>
+    <section class="cards_showcase">
+        <div class="card">
+            <img class="card_img" src="./Assets/images/14.jpeg">
+            <div class="card_ttile">
+                <h1 class="card_name">Spend the night in the Ferrari Museum</h1>
+            </div>
+            <div class="card_disc">
+                <span calss="card_disc">Hosted by Marc Gené </span> 
+                <span class="card_price">Sold out</span>
+            </div>
+        </div><div class="card">
+            <img class="card_img" src="./Assets/images/15.webp">
+            <div class="card_ttile">
+                <h1 class="card_name">Shrek's Swamp</h1>
+            </div>
+            <div class="card_disc">
+                <span calss="card_disc">Hosted by Donkey</span> 
+                <span class="card_price">Sold out</span>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card_img" src="./Assets/images/16.webp">
+            <div class="card_ttile">
+                <h1 class="card_name">Barbie's Malibu DreamHouse, Ken's Way</h1>
+            </div>
+            <div class="card_disc">
+                <span calss="card_disc">Hosted by Ken</span> 
+                <span class="card_price">Sold out</span>
+            </div>
+        </div><div class="card">
+            <img class="card_img" src="./Assets/images/17.webp">
+            <div class="card_ttile">
+                <h1 class="card_name">Ted Lasso's Favorite Pub</h1>
+            </div>
+            <div class="card_disc">
+                <span calss="card_disc">Hosted by Mae</span> 
+                <span class="card_price">Sold out</span>
+            </div>
+        </div><div class="card">
+            <img class="card_img" src="./Assets/images/18.webp">
+            <div class="card_ttile">
+                <h1 class="card_name">Houseplant Retreat</h1>
+            </div>
+            <div class="card_disc">
+                <span calss="card_disc">Hosted by Seth Rogen</span> 
+                <span class="card_price">Sold out</span>
+            </div>
+        </div><div class="card">
+            <img class="card_img" src="./Assets/images/19.jpeg">
+            <div class="card_ttile">
+                <h1 class="card_name">Home Alone Holiday</h1>
+            </div>
+            <div class="card_disc">
+                <span calss="card_disc">Hosted by Buzz</span> 
+                <span class="card_price">Sold out</span>
+            </div>
+        </div><div class="card">
+            <img class="card_img" src="./Assets/images/20.webp">
+            <div class="card_ttile">
+                <h1 class="card_name">The Last Blockbuster</h1>
+            </div>
+            <div class="card_disc">
+                <span calss="card_disc">Hosted by Sandi</span> 
+                <span class="card_price">Sold out</span>
+            </div>
+        </div>
+        </div>
+    </section>
+    <div id="foot">
+    <footer id="page_footer">
+        <section id="footer_bar">
+            <h1 id="bar_tittle">
+                Inspiration for future getaways
+            </h1>
+            <div id="bar_types">
+                <span>Popular</span>
+                <span>Arts & culture</span>
+                <span>Outdoors</span>
+                <span>Mountains</span>
+                <span>Beach</span>
+                <span>Unique stays</span>
+                <span>Categories</span>
+                <span>Things to do</span>
+                <span>Travel tips & inspiration</span>
+                <span>Airbnb-friendly apartments</span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+            <hr>
+        </section>
+        <section id="footer_places">
+            <div class="places">
+                <span class="place_tittle">Canmore </span>
+                <span>Pet-friendly rentals </span>
+            </div>
+            <div class="places">
+                <span class="place_tittle">Benalmádena</span>
+                <span>House rentals</span>
+            </div>
+            <div class="places">
+                <span class="place_tittle">Marbella</span>
+                <span>Villa rentals</span>
+            </div>
+            <div class="places">
+                <span class="place_tittle">Mijas</span>
+                <span>Apartment rentals</span>
+            </div>
+            <div class="places">
+                <span class="place_tittle">Prescott</span>
+                <span>Cabin rentals</span>
+            </div>
+            <div class="places">
+                <span class="place_tittle">Scottsdale</span>
+                <span>House rentals</span>
+            </div>
+            <div class="places">
+                <span class="place_tittle">Tucson</span>
+                <span>Mansion rentals</span>
+            </div>
+            <div class="places">
+                <span class="place_tittle">Jasper</span>
+                <span>Vacation rentals</span>
+            </div>
+            <div class="places">
+                <span class="place_tittle">Mountain View</span>
+                <span>Pet-friendly rentals</span>
+            </div>
+            <div class="places">
+                <span class="place_tittle">Devonport</span>
+                <span>Vacation rentals</span>
+            </div>
+            <div class="places">
+                <span class="place_tittle">Mallacoota</span>
+                <span>Pet-friendly rentals</span>
+            </div>
+            <div class="places">
+                <span class="place_tittle">Ibiza</span>
+                <span>Apartment rentals</span>
+            </div>
+            <div class="places">
+                <span class="place_tittle">Anaheim</span>
+                <span>Family-friendly rentals</span>
+            </div>
+            <div class="places">
+                <span class="place_tittle">Monterey</span>
+                <span>Bungalow rentals</span>
+            </div>
+            <div class="places">
+                <span class="place_tittle">Paso Robles</span>
+                <span>House rentals</span>
+            </div>
+            <div class="places">
+                <span class="place_tittle">Santa Barbara</span>
+                <span>House rentals</span>
+            </div>
+            <div class="places">
+                <span class="place_tittle">Sonoma</span>
+                <span>House rentals</span>
+            </div>
+            <div class="places" id="show_more">
+                <span class="place_tittle">Show more</span>
+                <i class="fa-solid fa-chevron-down"></i>
+                
+            </div>
+        </section>
+        <hr>
+        <section id="footer_links">
+            <div class="links_col">
+                <span id="col_tittle">
+                    Support
+                </span>
+                <span>Help Center</span>
+                <span>AirCover</span>
+                <span>Anti-discrimination</span>
+                <span>Disability support</span>
+                <span>Cancellation options</span>
+                <span>Report neighborhood concern</span>
+            </div>
+        
+            <div class="links_col">
+                <span id="col_tittle">
+                    Hosting
+                </span>
+                <span>Airbnb your home</span>
+                <span>AirCover for Hosts</span>
+                <span>Hosting resources</span>
+                <span>Community forum</span>
+                <span>Hosting responsibly</span>
+                <span>Airbnb-friendly apartments</span>
+                <span>Join a free Hosting class</span>
+            </div>
+            <div class="links_col">
+                <span id="col_tittle">
+                    Airbnb
+                </span>
+                <span>Newsroom</span>
+                <span>New features</span>
+                <span>Careers</span>
+                <span>Investors</span>
+                <span>Gift cards</span>
+                <span>Airbnb.org emergency stays</span>
+            </div>
+        </section>
+        <hr>
+        <section id="footer_social">
+            <div id="left_social">
+                <span id="copyright">© 2024 Airbnb, Inc.</span>
+                <span>Terms</span>
+                <span>Sitemap</span>
+                <span>Privacy</span>
+                <span>Your Privacy Choices</span>
+            </div>
+            <div id="right_social">
+                <i class="fa-solid fa-globe"></i>
+                <span>English(US)</span>
+                <span>EGP</span>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+
+            </div>
+        </section>
+    </footer>
+   </div>
+</body>
+</html>
